@@ -1,0 +1,362 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1REM = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 2rem 0;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/** Utilidades */
+.text-center {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .max-width-30 {
+        max-width: 30rem;
+    }
+}
+
+/** Header y Navegacion **/
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+
+.nav-principal {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+.hero {
+    background-image: url(../img/javier-trueba-iQPr1XkF5F0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 25rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}
+
+/** Bloque Nosotros */
+.sobre-nosotros {
+    background-image: linear-gradient(to bottom, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
+    background-position: center, top left;
+    background-repeat: no-repeat;
+    background-size: 100%, 70rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
+        background-position: left center;
+        padding: 10rem 0;
+        background-size: 100%, 160rem;
+    }
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 10rem;
+    }
+}
+
+.texto-nosotros {
+    grid-row: 2 / 3;
+    color: #FFF;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .texto-nosotros {
+        grid-column: 2 / 3;
+    }
+}
+
+
+/** espacios **/
+.espacios {
+    padding: 5rem 0;
+}
+
+.categoria {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .categoria {
+        margin-bottom: 0;
+    }
+}
+
+.espacios img {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .listado-espacios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+/** formulario **/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20px 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="date"],
+    select,
+    button {
+        font-size: 14px;
+    }
+}
+
+/** tabla carreras **/
+.containerCarreras {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ... Estilos previamente definidos ... */
+
+.carreras-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+    /* Permite desplazar horizontalmente si el contenido es más ancho que la pantalla */
+}
+
+.carreras-table th,
+.carreras-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.carreras-table thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+.carreras-table tbody tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20px 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="date"],
+    select,
+    button {
+        font-size: 14px;
+    }
+
+    /* Estilos específicos para la tabla en dispositivos móviles */
+    .carreras-table {
+        font-size: 12px;
+    }
+
+    .carreras-table th,
+    .carreras-table td {
+        padding: 8px;
+    }
+}
+
+/** Footer **/
+.site-footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+.site-footer h3 {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .site-footer h3 {
+        text-align: left;
+    }
+
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+

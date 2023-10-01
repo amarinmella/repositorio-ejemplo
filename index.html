@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Instituto Andrés Bello</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1 class="nombre-sitio">Instituto <span> Andrés Bello </span></h1>
+        </header>
+        
+        <div class="contenedor-navegacion">
+            <nav class="nav-principal contenedor">
+                <a href="index.html">Inicio</a>
+                <a href="carreras.html">Carreras</a>
+            </nav>
+        </div>
+
+        <div class="hero"></div>
+
+        
+
+        <section class="contenedor espacios">
+            <h2 class="text-center">Espacios</h2>
+        
+            <div class="listado-espacios">
+                <div class="espacios">
+                    <img src="./img/charles-deloye-2RouMSg9Rnw-unsplash.jpg" alt="Imagen espacios" />
+                </div>
+        
+                <div class="espacios">
+                    <img src="./img/priscilla-du-preez-XkKCui44iM0-unsplash.jpg" alt="Imagen espacios" />
+                </div>
+        
+                <div class="espacios">
+                    <img src="./img/ryan-jacobson-cXUOQWdRV4I-unsplash.jpg" alt="Imagen espacios" />
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-nosotros">
+            <div class="contenedor sobre-nosotros-grid">
+                <div class="texto-nosotros">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatum fugiat numquam sunt error,
+                        odit nostrum sed adipisci minima ipsum labore asperiores. Assumenda delectus necessitatibus iusto,
+                        dolore vel quod blanditiis!</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Formulario de Registro Estudiantil</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                
+                    <label for="rut">Rut:</label>
+                    <input type="text" id="rut" name="rut" required placeholder="Ejemplo: 12.345.678-9">
+                
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                
+                    <label for="carrera">Carrera a cursar:</label>
+                    <select id="carrera" name="carrera">
+                        <!-- Aquí puedes agregar todas las carreras disponibles en el instituto -->
+                        <option value="Ingeniería Informática">Ingeniería Informática</option>
+                        <option value="Medicina">Medicina</option>
+                        <!-- ... otras carreras ... -->
+                    </select>
+                
+                    <label for="fecha_periodo">Fecha del período académico:</label>
+                    <input type="date" id="fecha_periodo" name="fecha_periodo" required>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="site-footer">
+            <div class="grid-footer contenedor">
+                <p class="copyright">Todos los derechos Reservados, Instituto Andrés</p>
+            </div>
+        
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
